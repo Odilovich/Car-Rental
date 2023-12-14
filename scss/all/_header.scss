@@ -1,0 +1,116 @@
+header {
+    width: 100%;
+    border-bottom: 1.5px solid #E5E7EA;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    // example
+
+    .nav {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            font-style: 24px;
+            cursor: pointer;
+
+            @media  screen and (max-width: 768px) {
+                padding-left: 5px;
+            }
+        }
+
+        
+
+        .nav__list--item{
+            @media  screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &__list--right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @media  screen and (max-width: 768px) {
+                display: none;
+            }
+
+            p {
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            div {
+                padding: 18px;
+                background-color: #F5F5F5;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    svg {
+                        path {
+                            fill: #000000;
+                        }
+                    }
+                }
+            }
+
+            button {
+                padding: 18px 30px;
+                border: none;
+                background-color: #299764;
+                color: #fff;
+                border-radius: 100px;
+                transition: all 0.2s linear;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #077743;
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+            align-items: center;
+
+            &--item {
+                text-transform: uppercase;
+
+                &-link {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 500;
+                    &:hover{
+                        color:rgb(117, 54, 54);
+                    }
+                }
+            }
+        }
+
+        .nav-menu{
+            display: none;
+
+            @media  screen and (max-width: 768px) {
+                display: block;
+                padding-right: 5px;
+            }
+
+            
+
+        }
+    }
+}
+
+
+

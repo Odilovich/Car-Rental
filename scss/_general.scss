@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    background-color: #ff0000;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(219, 219, 219);
+    width: 30px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #299764;
+    border-radius: 50px;
+    width: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: #c58888;
+    }
+}

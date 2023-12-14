@@ -1,0 +1,124 @@
+#safe {
+    margin-top: 200px;
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 390px) {
+        margin-top: 100px;
+    }
+
+    .safe__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 70px 32px 32px;
+        border-radius: 20px;
+        border: 1.5px solid #E5E7EA;
+
+        @media screen and (max-width: 390px) {
+            padding: 24px 20px;
+            display:flex;
+            flex-direction: column;
+        }
+
+        &--left {
+            &-tittles {
+                h2 {
+                    width: 466px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 390px) {
+                        width: 183px;
+                        font-size: 24px;
+                    }
+                }
+
+                p {
+                    width: 590px;
+                    color: #555;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 94px;
+
+                    @media screen and (max-width: 390px) {
+                        width: 321px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &--cards {
+                display: flex;
+                gap: 10px;
+
+                @media screen and (max-width: 390px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &-card {
+                    width: 200px;
+                    padding: 20px 20px 15px 15px;
+                    border-radius: 16px;
+                    background: #F5F5F5;
+
+                    @media  screen and (max-width: 768px) {
+                        width: 320px;
+                    }
+
+                    .safe-svg {
+                        margin-bottom: 30px;
+                        text-align: end;
+
+                        @media screen and (max-width: 390px) {
+                            text-align: end;
+                        }
+                    }
+
+                    p {
+                        width: 170px;
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 22px;
+
+                        @media screen and (max-width: 390px) {
+                            width: 289px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    &:hover {
+
+                        svg{
+                            path{
+                                fill:white
+                            }
+                        }
+
+                        p{
+                            color: white;
+                        }
+                        cursor: pointer;
+                        background: #299764;
+                    }
+
+                }
+
+            }
+        }
+
+        &--right {
+            display: none;
+        }
+    }
+}
