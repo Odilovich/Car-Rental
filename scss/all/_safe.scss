@@ -118,7 +118,9 @@
         }
 
         &--right {
-            display: none;
+            @media screen and (max-width: 390px) {
+                display: none;
+            }
         }
     }
 }

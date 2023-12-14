@@ -1259,6 +1259,8 @@ footer .footer__wrapper2 .footer-end a div {
 #safe .safe__wrapper--left--cards-card:hover p {
   color: white;
 }
-#safe .safe__wrapper--right {
-  display: none;
+@media screen and (max-width: 390px) {
+  #safe .safe__wrapper--right {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
